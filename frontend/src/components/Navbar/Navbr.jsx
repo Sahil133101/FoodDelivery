@@ -14,12 +14,12 @@ const Navbr = ({ setshowLogiin }) => {
         <Link to="/" onClick={() => setmenu("Home")} className={menu === "Home" ? "active" : ""}>
           Home
         </Link>
-        <Link to="#explore-menu" onClick={() => setmenu("Menu")} className={menu === "Menu" ? "active" : ""}>
+        <a herf="#explore-menu" onClick={() => setmenu("Menu")} className={menu === "Menu" ? "active" : ""}>
           Menu
-        </Link>
-        <Link to="#footer" onClick={() => setmenu("Contact-us")} className={menu === "Contact-us" ? "active" : ""}>
+        </a>
+        <a href="#footer" onClick={() => setmenu("Contact-us")} className={menu === "Contact-us" ? "active" : ""}>
           Contact us
-        </Link>
+        </a>
       </ul>
 
       <div className="navbar-right">
