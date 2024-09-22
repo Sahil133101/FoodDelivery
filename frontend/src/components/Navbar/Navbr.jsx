@@ -8,13 +8,13 @@ const Navbr = ({ setshowLogiin }) => {
 
   return (
     <div className='Navbar'>
-      <img src={assets.logo} alt="Logo" className='logo' />
+       <Link to='/' > <img src={assets.logo} alt="Logo" className='logo' /> </Link>
 
       <ul className="navbar-menu">
         <Link to="/" onClick={() => setmenu("Home")} className={menu === "Home" ? "active" : ""}>
           Home
         </Link>
-        <a herf="#explore-menu" onClick={() => setmenu("Menu")} className={menu === "Menu" ? "active" : ""}>
+        <a href="#explore-menu" onClick={() => setmenu("Menu")} className={menu === "Menu" ? "active" : ""}>
           Menu
         </a>
         <a href="#footer" onClick={() => setmenu("Contact-us")} className={menu === "Contact-us" ? "active" : ""}>
@@ -25,7 +25,9 @@ const Navbr = ({ setshowLogiin }) => {
       <div className="navbar-right">
         <img src={assets.search_icon} alt="Search" />
         <div className="navbar-search-icon">
-          <img src={assets.basket_icon} alt="Basket" />
+        <Link to='/cart'> 
+            <img src={assets.basket_icon} alt="Basket" />
+          </Link>
           <div className="dot"></div>
         </div>
         <button onClick={() =>{setshowLogiin(true)}}>
