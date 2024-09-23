@@ -55,19 +55,17 @@ const Cart = () => {
             </div>
             <hr />
             <div className="cart-total-details">
-              <b>
-                Total
-              </b>
-              <b>
-                {0}
-              </b>
+              <b>Total</b>
+              <b>{0}</b>
             </div>
            
           </div>
+          <div>
+        <button className='cart-submit'>Checkout</button> {/* Added checkout functionality */}
         </div>
-        <button> 
-              PROCEED TO CHECKOUT
-              </button>
+        </div>
+     
+       
       </div>
       <div className="cart-promocode">
         <div>
@@ -80,6 +78,7 @@ const Cart = () => {
           </div>
         </div>
       </div>
+     
     </div>
   );
 };
