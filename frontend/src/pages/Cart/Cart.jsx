@@ -52,12 +52,12 @@ const navigate = useNavigate();
             <hr />
             <div className="cart-total-details">
               <p>Delivery Fee</p>
-              <p>₹{2}</p>
+              <p>₹{gettotalcartAmount() === 0 ?0 : 40}</p>
             </div>
             <hr />
             <div className="cart-total-details">
               <b>Total</b>
-              <b>₹{ gettotalcartAmount() + 2 }</b>
+              <b>₹{gettotalcartAmount()===0?0 : gettotalcartAmount()+40 }</b>
             </div>
            
           </div>
