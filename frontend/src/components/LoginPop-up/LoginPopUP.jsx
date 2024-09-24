@@ -7,7 +7,7 @@ const LoginPopUP = ({setshowLogin}) => {
   return (
     <div className="loginPop">
         <form className='Container'>
-          <div className="titel">
+          <div className="title">
 <h2> {current}</h2>
 <img onClick={()=> setshowLogin(false)} src ={assets.cross_icon} />
           </div>
