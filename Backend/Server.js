@@ -2,6 +2,9 @@ import express from 'express';
 
 import cors from 'cors';
 import { connectDB } from './Config/db.js';
+
+
+import foodrouter from './routes/foodroute.js';
 //mongodb+srv://sahilnakulish143:<db_password>@cluster0.cpo2c.mongodb.net/?
 //app config
 
@@ -18,7 +21,7 @@ app.use(cors());
 connectDB();
 // api endpoint
 
-app.use("/api/food",foodRouter)
+app.use("/api/food",foodrouter)
 
 
 app.get("/",(req, res) => {
